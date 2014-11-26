@@ -8,5 +8,6 @@ RUN rm -rf /etc/nginx/*.d
 RUN mkdir -p /etc/nginx/addon.d /etc/nginx/conf.d /etc/nginx/host.d /etc/nginx/nginx.d
 ADD config /config
 ADD etc /etc
+ADD data /data
 ADD supervisord.conf /etc/supervisor/conf.d/nginx.conf
 EXPOSE 80
